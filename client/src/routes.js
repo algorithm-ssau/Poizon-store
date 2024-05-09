@@ -1,1 +1,11 @@
-const bool = true
+export const authRoutes = [
+    {
+
+    }
+]
+
+export const publicRoutes = [
+    {
+        
+    }
+]
