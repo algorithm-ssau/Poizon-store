@@ -1,5 +1,5 @@
 # Poizon-store
-This repository contains the source code of the project "Online store to buy things from China" 
+В этом репозитории нахоходится проект "Онлайн-магазин по продаже вещей из Китая"
 # В ролях
 - Мананников Максим (Team-lead, Front-end)
 
