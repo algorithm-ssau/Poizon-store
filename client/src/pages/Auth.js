@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Auth = () => {
+    const isAuth = false
     return (
         <div>
             AUTH
