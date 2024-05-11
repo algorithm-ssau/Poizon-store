@@ -6,11 +6,13 @@ import Basket from '../pages/Basket';
 import ItemPage from '../pages/ItemPage';
 import Admin from '../pages/Admin';
 import { Context } from '..';
+import NavBar from './NavBar';
 
 const AppRouter = () => {
     const {user} = useContext(Context)
     return (
         <Router>
+            <NavBar/>
             <Routes>
                 <Route path='/' element={<Shop/>}/>
                 <Route path='/login' element={<Auth/>}/>
