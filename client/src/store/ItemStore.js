@@ -4,7 +4,9 @@ export default class ItemStore {
     constructor() {
         this._types = [
             {id: 1, name: 'Кроссовки'},
-            {id: 2, name: 'Одежда'}
+            {id: 2, name: 'Одежда'},
+            {id: 3, name: 'Аксессуары'},
+            {id: 4, name: 'Прочее'}
         ]
         this._brands = [
             {id: 1, name: 'Nike'},
@@ -16,6 +18,7 @@ export default class ItemStore {
             {id: 3, name: 'Nike Air Jordan 1', price: 15000, rating: 5, img: 'https://krossteam.co/image/cache/catalog/sneakers/570/nike-air-jordan-1-black-white-1-1358x1502w.jpg.webp'},
             {id: 4, name: 'Nike Air Jordan 1', price: 15000, rating: 5, img: 'https://krossteam.co/image/cache/catalog/sneakers/570/nike-air-jordan-1-black-white-1-1358x1502w.jpg.webp'}
         ]
+        this._selectedType = {}
         makeAutoObservable(this)
     }
 
@@ -28,6 +31,9 @@ export default class ItemStore {
     setItems(items) {
         this._items = items
     }
+    setSelectedType(type) {
+        this._selectedType = type
+    }
 
     get types() {
         return this._types
@@ -37,5 +43,8 @@ export default class ItemStore {
     }
     get items() {
         return this._items
+    }
+    get selectedType() {
+        return this._selectedType
     }
 }
