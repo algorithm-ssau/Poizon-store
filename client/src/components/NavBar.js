@@ -13,7 +13,7 @@ const NavBar = observer(() => {
     const {user} = useContext(Context)
     const navigate = useNavigate()
 
-    
+
     return (
         <div>
             <Navbar bg="dark" data-bs-theme="dark">
