@@ -1,22 +1,22 @@
-require('dotenv').config();
+// cd Poizon-store/server
 
+require('dotenv').config()
 const express = require('express')
-
-const PORT= 4321
-
-const sequelize = require('./db')
+const sequelize = require('./db.js')
 
 const app = express()
 
-const start = async () =>{
+const PORT = process.env.PORT || 4321
+
+const start = async () => {
     try{
         await sequelize.authenticate()
         await sequelize.sync()
-        app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
+        app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
     }
-    catch(e){
-        console.error(e)
+    catch (e){
+        console.log(e)
     }
 }
 
-start().then(r => {})
+start()
