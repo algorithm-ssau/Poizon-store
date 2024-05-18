@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react-lite';
 import React, { useContext } from 'react';
 import { Context } from '../index';
-import { Col, Row, Card } from 'react-bootstrap';
+import { Col, Card } from 'react-bootstrap';
 
 const BrandBar = observer(() => {
     const {item} = useContext(Context)
@@ -10,11 +10,11 @@ const BrandBar = observer(() => {
         <Col className="d-flex">
             {item.brands.map(brand => 
                 <Card
-                    // style={{cursor:'pointer'}}
+                    style={{cursor:'pointer'}}
                     key={brand.id}
                     className="p-3 mx-2"
-                    // onClick={() => item.setSelectedBrand(brand)}
-                    // border={brand.id === item.selectedBrand.id ? 'danger' : 'light'}
+                    onClick={() => item.setSelectedBrand(brand)}
+                    border={brand.id === item.selectedBrand.id ? 'info' : 'dark'}
                 >
                     {brand.name}
                 </Card>
