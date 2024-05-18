@@ -1,5 +1,6 @@
 // cd Poizon-store/server
-
+// npm run dev
+const gt = 0
 require('dotenv').config()
 const express = require('express')
 const sequelize = require('./db.js')
