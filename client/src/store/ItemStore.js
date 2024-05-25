@@ -13,6 +13,7 @@ export default class ItemStore {
             {id: 2, name: 'Adidas'},
             {id: 3, name: 'Puma'},
             {id: 4, name: 'Yeezy'},
+            {id: 5, name: 'Omen'},
         ]
         this._items = [
             {id: 1, name: 'Nike Air Jordan 1', price: 15000, rating: 5, img: 'https://krossteam.co/image/cache/catalog/sneakers/570/nike-air-jordan-1-black-white-1-1358x1502w.jpg.webp'},
