@@ -4,10 +4,19 @@ require('dotenv').config()
 const express = require('express')
 const sequelize = require('./db.js')
 const models = require('./models/models.js')
-
-const app = express()
+const cors = require('cors')
+const router = require('./routes/index.js')
 
 const PORT = process.env.PORT || 4321
+
+const app = express()
+app.use(cors())
+app.use(express.json())
+app.use('/api', router)
+
+app.get('/', (req,res) => {
+    res.status(200).json({message : 'WORKING!!!'})
+})
 
 const start = async () => {
     try{
