@@ -9,5 +9,3 @@ router.use('/user', userRouter)
 router.use('/type', typeRouter)
 router.use('/brand', brandRouter)
 router.use('/item', itemRouter)
-
-module.exports = router

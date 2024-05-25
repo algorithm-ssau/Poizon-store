@@ -9,11 +9,8 @@ const router = require('./routes/index.js')
 
 const PORT = process.env.PORT || 4321
 
-app.use('/api', router)
 
-app.get('/', (req,res) => {
-    res.status(200).json({message : 'WORKING!!!'})
-})
+app.use('/api', router)
 
 const start = async () => {
     try{
