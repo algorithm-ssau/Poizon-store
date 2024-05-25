@@ -4,8 +4,13 @@ require('dotenv').config()
 const express = require('express')
 const sequelize = require('./db.js')
 const models = require('./models/models.js')
+const cors = require('cors')
 
 const router = require('./routes/index.js')
+const app = express()
+app.use(cors())
+app.use(express.json())
+
 
 const PORT = process.env.PORT || 4321
 
