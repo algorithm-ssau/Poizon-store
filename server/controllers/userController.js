@@ -11,7 +11,8 @@ class UserController{
 
     async check(req, res)
     {
-        res.json('work')
+        const {id} = req.query
+        res.json(id)
     }
 
 }
