@@ -1,7 +1,11 @@
-const Router = require ('express')
-const router = new Router()
+const express = require('express');
+const router = express.Router();
 
-router.post('/',)
-router.get('/',)
+router.post('/',(req, res) => {
+    // Обработчик POST-запроса
+  })
+router.get('/',(req, res) => {
+    // Обработчик GET-запроса
+  })
 
 module.exports = router
