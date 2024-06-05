@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const typeController = require('../controllers/typeController')
+const checkRoleMiddleware = require('../middleware/checkRoleMiddleware')
 
-
-router.post('/', typeController.create)
+router.post('/', checkRoleMiddleware('ADMIN'), typeController.create)
 router.get('/', typeController.getAll)
 
 
