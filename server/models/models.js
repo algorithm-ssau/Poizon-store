@@ -71,7 +71,7 @@ Item.belongsTo(Brand)
 Item.hasMany(Rating)
 Rating.belongsTo(Item)
 
-Item.hasMany(Item_Info)
+Item.hasMany(Item_Info, {as:"info"})
 Item_Info.belongsTo(Item)
 
 Type.belongsToMany(Brand, {through: Type_Brand})
