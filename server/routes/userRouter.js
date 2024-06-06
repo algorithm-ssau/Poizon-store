@@ -1,9 +1,3 @@
-const Router = require ('express')
-const router = new Router()
-const UserController = require ('../controllers/userController')
-const userController = require('../controllers/userController')
-const express = require('express');
-const router = express.Router();
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController')
