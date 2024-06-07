@@ -11,6 +11,12 @@
 
 - Деревяшкин Андрей (Back-end)
 
+Использованные технологии:
+1. PostgresSQL
+2. Node.js
+3. Express.js
+4. React.js
+
 Инструкция по запуску сайта
 1. В терминале склонировать репозиторий: git clone https://github.com/algorithm-ssau/Poizon-store.git
 2. Скачать node.js по ссылке https://nodejs.org/en/download/package-manager
