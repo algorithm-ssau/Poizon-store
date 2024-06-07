@@ -21,5 +21,5 @@
 1. В терминале склонировать репозиторий: git clone https://github.com/algorithm-ssau/Poizon-store.git
 2. Скачать node.js по ссылке https://nodejs.org/en/download/package-manager
 3. Перейти в директорию: cd Poizon-store/client
-4. Ввести команду: npm start
+4. Ввести команду: npm run start
 5. Автоматически откроется страница в браузере
