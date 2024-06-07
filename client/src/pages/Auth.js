@@ -3,6 +3,7 @@ import {Container, Form} from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
+
 import {NavLink, useLocation, useNavigate} from "react-router-dom";
 import {LOGIN_ROUTE, REGISTRATION_ROUTE, SHOP_ROUTE} from "../utils/consts";
 import {login, registration} from "../http/userAPI";
@@ -29,6 +30,7 @@ const Auth = observer(() => {
             }
             user.setUser(user)
             user.setIsAuth(true)
+
             history.push(SHOP_ROUTE)
         } catch (e) {
             alert(e.response.data.message)
