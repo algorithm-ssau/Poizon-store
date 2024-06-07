@@ -6,16 +6,20 @@ import reportWebVitals from './reportWebVitals';
 import UserStore from './store/UserStore';
 import ItemStore from './store/ItemStore';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+export const Context = createContext(null);
 
-export const Context = createContext(null)
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement);
+
 root.render(
-  <Context.Provider value={{
-    user: new UserStore(),
-    item: new ItemStore(),
-  }}>
-    <App />
-  </Context.Provider>
+  <React.StrictMode>
+    <Context.Provider value={{
+      user: new UserStore(),
+      item: new ItemStore(),
+    }}>
+      <App />
+    </Context.Provider>
+  </React.StrictMode>
 );
 
 reportWebVitals();
